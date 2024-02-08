@@ -12,8 +12,8 @@ const Login =()=>{
     const [pass, setpass] = useState('')
     const navigate =useNavigate()
     useEffect(() => {
-        if (localStorage.getItem('user') != undefined || localStorage.getItem('user') != 'null') {
-            alert('already login, logout first to login back!')
+        if (localStorage.getItem('user') != undefined && localStorage.getItem('user') != 'null') {
+            // alert('already login, logout first to login back!')
             navigate('/todos')
         }
     }, [])
