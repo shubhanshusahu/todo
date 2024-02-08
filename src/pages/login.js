@@ -24,10 +24,13 @@ const Login =()=>{
         axios.post(`${BaseUrl}login`, {username, pass})
         .then(res=>{
             console.log(res)
-            if(res.status==200 ){
+            if(res.data.length>0){
                 alert('login Successfull!')
                 localStorage.setItem('user',JSON.stringify(res.data[0]))
                 navigate('/todos')
+            }
+            else{
+                alert('Wrong ID or Password!')
             }
         })
         .catch(err=>{
