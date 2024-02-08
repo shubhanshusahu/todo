@@ -1,0 +1,18 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #868188;
+    padding: 30px;
+    border-radius: 20px;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #868188;
+    padding: 9px;
+    background: #101022;
+    min-width: 409px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
